@@ -1,0 +1,153 @@
+<table cellpadding="0" cellspacing="0" style="margin-left: auto; margin-right: auto; width: 600px; font-family: arial; background-color: #fff;">
+    <tbody>
+    <tr>
+    <td>
+    <table style="margin-left: auto; margin-right: auto; width: 600px;">
+    <tbody>
+    <tr align="center" style="width: 600px;">
+    <td colspan="3" style="width: 600px; vertical-align: middle; height: 100px;"><img src="https://www.rafalfuczynski.com/x/mail/logo.png" /></td>
+    </tr>
+    <tr align="center" style="font-size: 13px; letter-spacing: 2px; text-align: center;">
+    <td colspan="3">DZIĘKUJEMY ZA ZAKUPY W NASZYM SKLEPIE INTERNETOWYM</td>
+    </tr>
+    <tr align="center" style="height: 16px;">
+    <td colspan="3"></td>
+    </tr>
+    <tr style="height: 39px; width: 600px; color: #fff;">
+    <td style="width: 179px;"></td>
+    <td style="width: 242px; height: 39px; background-color: #111; font-size: 10px; text-align: center; letter-spacing: 1px; vertical-align: middle;" valign="middle">NUMER ZAMÓWIENIA <b style="font-size: 14px;">{order_id}</b></td>
+    <td style="width: 179px;"></td>
+    </tr>
+    <tr align="center" style="font-size: 13px;">
+    <td colspan="3" style="vertical-align: middle; height: 80px; line-height: 22px;">NOWY STATUS ZAMÓWIENIA<br /><b style="font-size: 16px;">ZAMÓWIENIE ZOSTAŁO WYSŁANE</b></td>
+    </tr>
+    <tr align="center" style="height: 50px; font-size: 11px; line-height: 14px; vertical-align: top;" valign="top">
+    <td colspan="3" style="width: 400px; vertical-align: top; text-align: center;">Mamy przyjemność Cię poinformować, że Twoja Paczka została wysłana i zmierza do Ciebie.<br /> Korzystając z linków poniżej możesz śledzić swoja przesyłkę.</td>
+    </tr>
+    </tbody>
+    </table>
+    <table style="margin-left: auto; margin-right: auto;" width="420">
+    <tbody>
+    <tr>
+
+        <td style="font-size: 11px; line-height: 18px; width: 221px;" valign="top">
+            <strong style="font-size: 10px; letter-spacing: 1px;">ADRES DOSTAWY</strong> <br />
+        
+            {if paczkomaty_machine_order_delivery_name} <strong>WYBRANY PUNKT ODBIORU</strong> <br /> 
+            {paczkomaty_machine_order_delivery_name} <br /> 
+            {paczkomaty_machine_order_delivery_location_description} <br />
+            {paczkomaty_machine_order_delivery_street} {paczkomaty_machine_order_delivery_building} <br />
+            {paczkomaty_machine_order_delivery_postcode} {paczkomaty_machine_order_delivery_town} <br />
+            <br /> 
+            {phone_1}{else}{if deliv_company}{deliv_company} <br /> 
+            {/if} {deliv_firstname} {deliv_lastname} <br /> 
+            {deliv_street_1} <br />
+            {deliv_postcode} {deliv_city} <br />
+            <br />
+            {phone_2} <br />{/if}
+        </td>
+            <td style="vertical-align: top;">
+    <table>
+    <tbody>
+    <tr valign="top">
+    <td style="font-size: 11px; width: 230px; vertical-align: top; height: 60px;"><b style="font-size: 10px; letter-spacing: 1px;">SPOSÓB DOSTAWY</b><br />{shipping}</td>
+    </tr>
+    <tr valign="top">
+    <td style="font-size: 11px; width: 230px; vertical-align: top; height: 60px;"><b style="font-size: 10px; letter-spacing: 1px;">NR LISTU PRZEWOZOWEGO</b><br />{tracking_number}<br /> <br />W przypadku wyboru przesyłki InPost nr listu przewozowego otrzymasz od przewoźnika</td>
+    </tr>
+    </tbody>
+    </table>
+    </td>
+    </tr>
+    <tr>
+    <td colspan="2" style="height: 20px;"></td>
+    </tr>
+    </tbody>
+    </table>
+    <table style="margin-left: auto; margin-right: auto;" width="570">
+    <tbody>
+    <tr>
+    <td><a href="https://tracktrace.dpd.com.pl/parcelDetails?typ=1&amp;p1=%7Btracking_number%7D&amp;p2=&amp;p3=&amp;p4=&amp;p5=&amp;p6=&amp;p7=&amp;p8=&amp;p9=&amp;p10=" rel="noreferrer" target="_blank"><img alt="status_dpd.png" src="https://www.rafalfuczynski.com/x/mail/status_dpd.png" /></a></td>
+    <td style="width: 10px;"></td>
+    <td><a href="https://inpost.pl/sledzenie-przesylek" rel="noreferrer" target="_blank"><img alt="status_inpost.png" src="https://www.rafalfuczynski.com/x/mail/status_inpost.png" /></a></td>
+    <td style="width: 10px;"></td>
+    <td><a href="https://ecommerce.poczta-polska.pl/pl/obsluga-wysylek/emonitoring/%7Btracking_number%7D" rel="noreferrer" target="_blank"><img alt="status_pp.png" src="https://www.rafalfuczynski.com/x/mail/status_pp.png" /></a></td>
+    </tr>
+    <tr>
+    <td colspan="5" style="height: 20px;"></td>
+    </tr>
+    </tbody>
+    </table>
+    <table cellpadding="0" cellspacing="0" style="height: 320px; background-color: #111; margin-left: auto; margin-right: auto; width: 600px; vertical-align: middle;">
+    <tbody>
+    <tr>
+    <td style="vertical-align: middle;">
+    <table style="margin-left: auto; margin-right: auto; width: 508px; vertical-align: middle; margin-top: 10px;">
+    <tbody>
+    <tr>
+    <td style="vertical-align: bottom;"><a href="https://facebook.com/octavillacom" rel="noreferrer" target="_blank"><img alt="fbs.png" src="https://www.rafalfuczynski.com/x/mail/fbs.png" /></a></td>
+    </tr>
+    </tbody>
+    </table>
+    <table style="margin-left: auto; margin-right: auto; width: 508px; height: 80px; vertical-align: middle;">
+    <tbody>
+    <tr>
+    <td style="vertical-align: middle;"><a href="https://octavilla.com" rel="noreferrer" target="_blank"><img alt="logo_octavilla.png" src="https://www.rafalfuczynski.com/x/mail/logo_octavilla.png" /></a></td>
+    <td align="right" style="vertical-align: middle;"><a href="https://facebook.com/octavillacom" rel="noreferrer" target="_blank"><img alt="fb.png" src="https://www.rafalfuczynski.com/x/mail/fb.png" /></a></td>
+    <td align="right" style="vertical-align: middle;"><a href="https://instagram.com/octavillacom" rel="noreferrer" target="_blank"><img alt="inst.png" src="https://www.rafalfuczynski.com/x/mail/inst.png" /></a></td>
+    <td align="right" style="vertical-align: middle;"><a href="https://pinterest.com/octavillacom" rel="noreferrer" target="_blank"><img alt="pt.png" src="https://www.rafalfuczynski.com/x/mail/pt.png" /></a></td>
+    </tr>
+    </tbody>
+    </table>
+    <table cellpadding="0" cellspacing="0" style="height: 1px; margin-left: auto; margin-right: auto; width: 504px; border-collapse: collapse; line-height: 7px;">
+    <tbody>
+    <tr>
+    <td align="center" style="height: 1px; width: 508px; border-bottom: 1px solid #6f6f6f;"></td>
+    </tr>
+    </tbody>
+    </table>
+    <table style="margin-left: auto; margin-right: auto; width: 508px; height: 80px;">
+    <tbody>
+    <tr>
+    <td colspan="3" style="height: 29px;"></td>
+    </tr>
+    <tr style="line-height: 18px; font-size: 10px;">
+    <td style="vertical-align: top;">
+    <table style="height: 70px;">
+    <tbody>
+    <tr>
+    <td valign="top"><a href="https://octavilla.com" rel="noreferrer" target="_blank"><img alt="shop.png" src="https://www.rafalfuczynski.com/x/mail/shop.png" /></a></td>
+    </tr>
+    <tr>
+    <td valign="bottom"><a href="https://octavilla.com/pl/panel" rel="noreferrer" target="_blank"><img alt="account.png" src="https://www.rafalfuczynski.com/x/mail/account.png" /></a></td>
+    </tr>
+    </tbody>
+    </table>
+    </td>
+    <td style="vertical-align: top; color: #fff;"><b>Biuro Obsługi Klienta</b><br /><a href="#tel://+48-791-834-738" style="text-decoration: none; color: #fff;">791 834 738</a><br /><a href="mailto:kontakt@octavilla.com" style="text-decoration: none; color: #fff;">kontakt@octavilla.com</a><br />pn-pt 08:00-16:00</td>
+    <td align="right" style="text-align: left; color: #fff; vertical-align: top;"><b>Zwroty i reklamacje</b><br /><a href="mailto:reklamacje@octavilla.com" style="text-decoration: none; color: #fff;">reklamacje@octavilla.com</a></td>
+    </tr>
+    </tbody>
+    </table>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+    <table style="margin-left: auto; margin-right: auto; width: 508px;">
+    <tbody>
+    <tr align="center" style="height: 23px; font-size: 11px; vertical-align: bottom;">
+    <td style="vertical-align: middle;">Copyright © 2018 <a href="#www://octavilla.com" style="text-decoration: none; color: #000;">OCTAVILLA.COM</a> All Rights Reserved</td>
+    </tr>
+    </tbody>
+    </table>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+    <table border="0" cellpadding="0" cellspacing="0" style="margin-left: auto; margin-right: auto;" width="600">
+    <tbody>
+    <tr>
+    <td style="height: 1px; line-height: 1px;"><img alt="space.png" height="1" src="https://www.rafalfuczynski.com/x/mail/space.png" style="display: block; width: 600px;" width="600" /></td>
+    </tr>
+    </tbody>
+    </table>
